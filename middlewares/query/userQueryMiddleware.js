@@ -31,4 +31,4 @@ const userQueryMiddleware = function (model, options) {
     });
 };
 
-module.exports = userQueryMiddleware
+module.exports = userQueryMiddleware;
