@@ -8,9 +8,6 @@ const getSingleUser = asyncerrorWrapper(async(req,res,next) => {
     const {id} = req.params;
 
     const user = await User.findById(id);
-
-    
-
     return res.status(200)
     .json({
         success:true,

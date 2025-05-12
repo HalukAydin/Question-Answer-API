@@ -24,7 +24,7 @@ const login = asyncerrorWrapper(async (req, res, next) => {
     if (!comparePasswords(password, user.password)) {
         return next(new CustomError("Please check your credentials"), 400);
     }
-    sendJwtToClient(user, res);
+        sendJwtToClient(user, res);
 });
 const logout = asyncerrorWrapper(async (req, res, next) => {
     const { NODE_ENV } = process.env;
